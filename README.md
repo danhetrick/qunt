@@ -14,6 +14,7 @@
 	* [Which Number is Larger Version One](#which-version-is-larger-version-one)
 	* [Which Number is Larger Version Two](#which-version-is-larger-version-two)
 	* [Calculate Average](#calculate-average)
+* [QUNT Commands](#qunt-commands)
 
 ## Summary
 
@@ -256,7 +257,8 @@ Please note that if especially large numbers are entered, it may take the progra
 
 Since the creation of the ~ operator, Mr. Planken has a written a newer, easier to understand version of `greater.q`:
 
-	$101$110$116$101$114$32$102$105$114$115$116$32$118$97$108$117$101$46$46$46$46$32.: $101$110$116$101$114$32$115$101$99$111$110$100$32$118$97$108$117$101$46$46$46$32.:
+	$101$110$116$101$114$32$102$105$114$115$116$32$118$97$108$117$101$46$46$46$46$32.:
+	$101$110$116$101$114$32$115$101$99$111$110$100$32$118$97$108$117$101$46$46$46$32.:
 	(0$116$104$101$32$110$117$109$98$101$114$115$32$97$114$101$32$101$113$117$97$108$4
 	6$13$10!) $109$97$120$61(0~`~&)?
 
@@ -301,3 +303,63 @@ If saved to a file named `average.q` and executed, this produces:
 
 There are 26 different commands/operators in **QUNT**.  All whitespace in a **QUNT** program is ignored.  All command arguments must be numeric.  Arguments are placed directly after the command;  for example, to initiate a loop that will execute 3 times, you would use `{3`.
 
+	╔═════════╦═══════════════════╦══════════════════════════════════════════════════════════════════════════════════════════════════════╗
+	║ Command ║ Accepts Arguments ║                                              Description                                             ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    .    ║ No                ║ Gets input from the user and stores it in the buffer.                                                ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    !    ║ No                ║ Exits the program.                                                                                   ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    %    ║ No                ║ Prints the contents of the queue; each queue value is followed by a newline.                         ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    $    ║ Yes               ║ The argument to this command is an ASCII code, which is converted to an ASCII character and printed. ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    <    ║ No                ║ Removes the first value from the queue.                                                              ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    |    ║ No                ║ Removes the last value from the queue.                                                               ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    &    ║ No                ║ Sets the buffer to the last queue value.                                                             ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    `    ║ No                ║ Sets the buffer to the first queue value.                                                            ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    :    ║ No                ║ Adds the buffer value to the end of the queue, and resets the buffer to zero.                        ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    ;    ║ No                ║ Adds the buffer value to the beginning of the queue, and resets the buffer to zero.                  ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    ?    ║ No                ║ Prints the buffer value, followed by a newline.                                                      ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    @    ║ No                ║ Clears the queue.                                                                                    ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    +    ║ No                ║ Adds all values in the queue in sequence.                                                            ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    *    ║ No                ║ Multiplies all values in the queue in sequence.                                                      ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    ^    ║ No                ║ Exponentiates all values in the queue in sequence.                                                   ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    /    ║ No                ║ Divides all values in the queue in sequence.                                                         ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    -    ║ No                ║ Subtracts all values in the queue in sequence.                                                       ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    #    ║ No                ║ Performs a modulus operation on all values in the queue in sequence.                                 ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    {    ║ Optional          ║ Begins a loop.  If an argument is passed to the command, the loop will be repeated a number          ║
+	║         ║                   ║ of times equal to the argument.  If no argument is passed, the loop will be infinite.                ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    }    ║ No                ║ Ends a loop.                                                                                         ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    '    ║ No                ║ Exits a loop.                                                                                        ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    (    ║ Yes               ║ Begins a conditional code block.  The block will only be executed if the buffer is                   ║
+	║         ║                   ║ equal to the value passed as an argument to the command.                                             ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    )    ║ No                ║ Ends a conditional code block.                                                                       ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    ~    ║ No                ║ Branches a conditional code block.  The first time it is called within a conditional                 ║
+	║         ║                   ║ block, the code following will be executed if the buffer is greater than the originalcondition.      ║
+	║         ║                   ║ The second time it is called within a conditional block, the code following will be                  ║
+	║         ║                   ║ executed if the buffer is less than original condition.                                              ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    "    ║ No                ║ Branches a conditional code block ("else").                                                          ║
+	╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════════════════════════════════════╣
+	║    >    ║ Yes               ║ Adds a value to the end of the queue.  The argument passed to it is the value added to the queue.    ║
+	╚═════════╩═══════════════════╩══════════════════════════════════════════════════════════════════════════════════════════════════════╝
