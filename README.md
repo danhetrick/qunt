@@ -133,7 +133,7 @@ Piping code to `qunt.pl` is possible.  Any code piped to `qunt.pl` is immediatel
 
 Think of the queue as a list of numbers.  You can print these numbers, or perform mathematical operations on them.  Math works differently in QUNT than in other programming languages.  All math operations are performed on the entire queue, rather than on one or two values at a time.  For example, addition is fairly normal.  Given a queue with the values `[1,2,3]`, if we perform the addition operation (with the `+` command), the result "6" will be stored in the buffer;  that is, "1+2+3 = 6". Things get a little stranger when we use other mathematical operations.  Given a queue with the values `[3,2,3]`, if we were to perform the exponential operation (with the `^` command), the result "729" will be stored in the buffer.  That's because "(32)^3 = 729".  Each operation is performed on every value in the queue, in sequence.
 
-Let's try another example, this time with the subtraction command, `-`.  Given a queue with the values `[10,5,3,2]`, if we issue the `-` command, we end up with the result "0" in the buffer, because "(((105)-3)-2) = 0".
+Let's try another example, this time with the subtraction command, `-`.  Given a queue with the values `[10,5,3,2]`, if we issue the `-` command, we end up with the result "0" in the buffer, because "(((10-5)-3)-2) = 0".
 
 The division command, `/`, works like the others.  Given a queue with the values `[10,5,1]`, if we issue the `/` command, we end up with "2" in the buffer, because "((10/5)/1) = 2".
 
