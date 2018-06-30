@@ -2,17 +2,17 @@
 
 **qunt.pl**
 **LICENSE**
-	[BSD 2-Clause](#license)
+	* [BSD 2-Clause](#license)
 **README.md**
 **docs/**
-	qunt.pdf
-	cheatsheet.txt
+	* qunt.pdf
+	* cheatsheet.txt
 **examples/**
-	[examples/average.q](#calculate-average)
-	[examples/celsius.q](#celsius-to-fahrenheit-converter)
-	[examples/fibonacci.q](#fibonacci-sequence-generator)
-	[examples/greater.q](#which-version-is-larger-version-one)
-	[examples/greater2.q](#which-version-is-larger-version-two)
+	* [examples/average.q](#calculate-average)
+	* [examples/celsius.q](#celsius-to-fahrenheit-converter)
+	* [examples/fibonacci.q](#fibonacci-sequence-generator)
+	* [examples/greater.q](#which-version-is-larger-version-one)
+	* [examples/greater2.q](#which-version-is-larger-version-two)
 
 # Summary
 
