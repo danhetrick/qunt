@@ -8,6 +8,7 @@
 * [Displaying Text](#displaying-text)
 * [The Shell](#the-shell)
 * [User Input](#user-input)
+* [Examples](#examples)
 
 ## Summary
 
@@ -160,3 +161,21 @@ To write the previously entered code to a file, just pass a filename as the firs
 The **QUNT** shell features one more command:  `clear`.  This deletes all the code that was previously entered (every time you enter **QUNT** code into the shell, it is saved;  this makes it easier to grab a list of commands that you might want to use in a program).
 
 ## User Input
+
+**QUNT** programs can get user input by using the `.` command.  When used, this will allow the user to type in a number;  this number will be stored in the buffer, where it can be placed in the queue, displayed, etc.  For example, let's write a program that accepts user input;  it will get three numbers from the user, and then display the average of those numbers:
+
+	$80$108$101$97$115$101$32$116$121$112$101$32$105$110$32$116$104$114$101$101$32$110
+	$117$109$98$101$114$115$58$10.:.:.:+@:>3/$84$104$101$32$97$118$101$114$97$103$101
+	$32$111$102$32$116$104$101$115$101$32$110$117$109$98$101$114$115$32$105$115$32?
+
+Save the complete program to a file named `average.q`, and run it:
+
+	localhost:~ user$ qunt.pl run average.q
+	Please type in three numbers:
+	1
+	2
+	3
+	The average of these numbers is 2
+	localhost:~ user$ 
+
+## Examples
