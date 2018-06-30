@@ -1,4 +1,13 @@
-# qunt
+# QUNT - The Queue for Numeric Transformation
+
+## Table of Contents
+
+* [The QUNT Compiler](#the-qunt-compiler)
+* [The Queue](#the-queue)
+* [The Buffer and Conditionals](#the-buffer-and-conditionals)
+* [Displaying Text](#displaying-text)
+* [The Shell](#the-shell)
+* [User Input](#user-input)
 
 ## Summary
 
@@ -6,7 +15,7 @@
 
     >0&?>1&?+?:{7<+?:}
 
-## The QUNT Compiler/Interpreter
+## The QUNT Compiler
 
 The official **QUNT Compiler/Interpreter**, `qunt.pl`, is written in Perl, and requires a default installation of Perl to run it and the compiled code produced by it. If called without any arguments, `qunt.pl` enters shell mode, where you can enter **QUNT** commands or statements and have them immediately executed.
 
@@ -133,7 +142,7 @@ The code generated will display "Hello, world!".
 
 ## The Shell
 
-For writing and testing **QUNT** code, the shell can be a useful asset.  With the shell, you can write code and execute it immediately, without having to compile it or write it to file.  The shell features two special commands, dump and clear.  With the dump command, you can display all the code you've entered before and optionally write it to file.  To simply display what code you've previously entered, enter the `dump` command without any arguments:
+For writing and testing **QUNT** code, the shell can be a useful asset.  With the shell, you can write code and execute it immediately, without having to compile it or write it to file.  The shell features two special commands, `dump` and `clear`.  With the `dump` command, you can display all the code you've entered before and optionally write it to file.  To simply display what code you've previously entered, enter the `dump` command without any arguments:
 
 	. >1>1+?
 	2
