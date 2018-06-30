@@ -1,15 +1,15 @@
 ![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
 
 
-* **qunt.pl** - The QUNT Compiler/Interpreter
-* **LICENSE** - [BSD 2-Clause](#license)
-* **README.md** - This document
-* **docs/qunt.pdf**
-* **docs/cheatsheet.pdf**
-* **[examples/celsius.q]**
-* **[examples/fibonacci.q]**
-* **[examples/greater.q]**
-* **[examples/greater2.q]**
+* **qunt.pl**				The QUNT Compiler/Interpreter
+* **LICENSE**				[BSD 2-Clause](#license)
+* **README.md**				This document
+* **docs/qunt.pdf**			Documentation in PDF format
+* **docs/cheatsheet.pdf**	Table of all QUNT commands
+* **examples/celsius.q**	Code example
+* **examples/fibonacci.q**	Code example
+* **examples/greater.q**	Code example
+* **examples/greater2.q**	Code example
 
 # Summary
 
