@@ -108,7 +108,7 @@ The division command, `/`, works like the others.  Given a queue with the values
 
 ## The Buffer and Conditionals
 
-All command results that do not directly manipulate the queue are stored in the buffer.  Conditional statements, that is, "if...then" statements, compare a given value to the buffer.  For example, let's write a program that does a math operation, and displays text depending on what the output is.  Our program will calculate "2+2", and display a message if the answer is "4", and a different message if it is not:
+_**All command results that do not directly manipulate the contents of the queue are stored in the buffer.**_  So, the results of all mathematical operations are stored in the buffer.  Conditional statements, that is, "if...then" statements, compare a given value to the buffer.  For example, let's write a program that does a math operation, and displays text depending on what the output is.  Our program will calculate "2+2", and display a message if the answer is "4", and a different message if it is not:
 
 	>2>2+(4$84$104$101$97$110$115$119$101$114$119$97$115$102$111$117$114$10$"@$84$104
 	$101$97$110$115$119$101$114$119$97$115$110$111$116$102$111$117$114$10)
