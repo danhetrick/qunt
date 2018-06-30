@@ -1,6 +1,6 @@
 ![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
 
-	`qunt.pl`
+	<b>qunt.pl</b>
 		The QUNT Compiler/Interpreter
 	LICENSE
 		[BSD 2-Clause](#license)
