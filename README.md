@@ -1,3 +1,5 @@
+![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
+
 # QUNT - The Queue for Numeric Transformation
 
 ## Summary
