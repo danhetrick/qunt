@@ -1,9 +1,9 @@
 ![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
 
 
-* **qunt.pl**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;The QUNT Compiler/Interpreter
-* **LICENSE**				[BSD 2-Clause](#license)
-* **README.md**				This document
+* **qunt.pl**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;The QUNT Compiler/Interpreter
+* **LICENSE**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[BSD 2-Clause](#license)
+* **README.md**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;This document
 * **docs/qunt.pdf**			Documentation in PDF format
 * **docs/cheatsheet.pdf**	Table of all QUNT commands
 * **examples/celsius.q**	Code example
