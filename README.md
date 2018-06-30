@@ -1,16 +1,15 @@
 ![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
 
 
-**qunt.pl** - The QUNT Compiler/Interpreter
-**LICENSE** - [BSD 2-Clause](#license)
-**README.md** - This document
-**docs/qunt.pdf**
-**docs/cheatsheet.pdf**
-**examples/average.q](#calculate-average)
-**[examples/celsius.q]**(#celsius-to-fahrenheit-converter)
-**[examples/fibonacci.q]**(#fibonacci-sequence-generator)
-**[examples/greater.q]**(#which-version-is-larger-version-one)
-**[examples/greater2.q]**(#which-version-is-larger-version-two)
+* **qunt.pl** - The QUNT Compiler/Interpreter
+* **LICENSE** - [BSD 2-Clause](#license)
+* **README.md** - This document
+* **docs/qunt.pdf**
+* **docs/cheatsheet.pdf**
+* **[examples/celsius.q]**
+* **[examples/fibonacci.q]**
+* **[examples/greater.q]**
+* **[examples/greater2.q]**
 
 # Summary
 
