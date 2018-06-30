@@ -1,9 +1,17 @@
 # QUNT - The Queue for Numeric Transformation
 
+## Summary
+
+**QUNT** (pronounced *"kyūnt"*, not...the other way) is an esoteric programming language influenced by Brainfuck.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  For example, here's a Fibonacci sequence generator written in **QUNT**.  It will generate and display the first 10 iterations of the sequence:
+
+    >0&?>1&?+?:{7<+?:}
+
+`qunt.pl` requires Perl, and will run in any environment that can run Perl.  Tested on Windows 7, Windows 8, Windows 8.1, Windows 10, Debian Linux, and Ubuntu Linux.
+
 ## Table of Contents
 
-* [The QUNT Compiler](#the-qunt-compiler)
 * [qunt.pl](#qunt.pl)
+* [The QUNT Compiler](#the-qunt-compiler)
 * [The Queue](#the-queue)
 * [The Buffer and Conditionals](#the-buffer-and-conditionals)
 * [Displaying Text](#displaying-text)
@@ -18,19 +26,11 @@
 * [QUNT Commands](#qunt-commands)
 * [License](#license)
 
-## Summary
-
-**QUNT** (pronounced *"kyūnt"*, not...the other way) is an esoteric programming language influenced by Brainfuck.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  For example, here's a Fibonacci sequence generator written in **QUNT**.  It will generate and display the first 10 iterations of the sequence:
-
-    >0&?>1&?+?:{7<+?:}
-
-`qunt.pl` requires Perl, and will run in any environment that can run Perl.  Tested on Windows 7, Windows 8, Windows 8.1, Windows 10, Debian Linux, and Ubuntu Linux.
-
 ## qunt.pl
 
 	QUNT Compiler/Interpreter 0.053
 
-	Usage: qunt.pl [ARGUMENT] [FILENAME]
+	Usage: perl qunt.pl [ARGUMENT] [FILENAME]
 	Execute with "run" as the first argument, followed by a filename, to compile and run a QUNT program.
 
 	Execute without argument to start interactive shell.
