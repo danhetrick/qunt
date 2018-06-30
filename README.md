@@ -22,6 +22,25 @@ or
 
 Compiled **QUNT** programs will run in any environment that can run Perl;  they require nothing except a Perl installation.
 
+# Included with QUNT
+
+* qunt.pl
+	* The QUNT Compiler/Interpreter
+* Documentation
+	* docs/qunt.pdf
+		* A PDF version of README.md
+	* docs/cheatsheet.txt
+		* A text file with a list of all 26 **QUNT** commands along with usage text.
+* QUNT Code Examples
+	* [examples/average.q](#calculate-average)
+	* [examples/celsius.q](#celsius-to-fahrenheit-converter)
+	* [examples/fibonacci.q](#fibonacci-sequence-generator)
+	* [examples/greater.q](#which-version-is-larger-version-one)
+	* [examples/greater2.q](#which-version-is-larger-version-two)
+* License
+	* [BSD 2-Clause](#license)
+* README.md
+
 # Table of Contents
 
 * [qunt.pl](#qunt.pl)
