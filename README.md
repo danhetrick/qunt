@@ -125,7 +125,7 @@ A **QUNT** program can also be directly interpreted, without having to pipe it t
 
 Piping code to `qunt.pl` is possible.  Any code piped to `qunt.pl` is immediately interpreted, rather than compiled to source.
 
-## The Queue
+# The Queue
 
 **QUNT** is based around the "queue":  a sequence of numbers, of variable length, that is manipulated and operated upon.  Besides the queue, QUNT features a "buffer";  the results of mathematical operations is stored in the buffer, buffer values can be added to the queue, and queue values can be stored in the buffer.   Initially, the buffer is set to zero.  This is the core concept of **QUNT**.  The only command that does not operate on either the queue or the buffer is the `$` command, which is used to display text (see [Displaying Text](#displaying-text), below).
 
@@ -135,7 +135,7 @@ Let's try another example, this time with the subtraction command, `-`.  Given a
 
 The division command, `/`, works like the others.  Given a queue with the values `[10,5,1]`, if we issue the `/` command, we end up with "2" in the buffer, because "((10/5)/1) = 2".
 
-## The Buffer and Conditionals
+# The Buffer and Conditionals
 
 _**All command results that do not directly manipulate the contents of the queue are stored in the buffer.**_  So, the results of all mathematical operations are stored in the buffer.  Conditional statements, that is, "if...then" statements, compare a given value to the buffer.  For example, let's write a program that does a math operation, and displays text depending on what the output is.  Our program will calculate "2+2", and display a message if the answer is "4", and a different message if it is not:
 
@@ -167,7 +167,7 @@ For a simple "else" branch, use the `"` command.  For example, let's write a pro
 
 	>1>1+(2%"!)
 
-## Displaying Text
+# Displaying Text
 
 Because all command arguments must be numbers, displaying text in **QUNT** can be difficult.  The $ command is used for this;  the command converts its argument from an ASCII code to an ASCII character, and displays it.  To make it easier to display text, the compiler/shell has a special commandline mode.  If `qunt.pl` is passed the argument "text", followed by the text to convert, it will generate **QUNT** code to display the desired text.  For example:
 
@@ -177,7 +177,7 @@ Because all command arguments must be numbers, displaying text in **QUNT** can b
 
 The code generated will display "Hello, world!".
 
-## The Shell
+# The Shell
 
 For writing and testing **QUNT** code, the shell can be a useful asset.  With the shell, you can write code and execute it immediately, without having to compile it or write it to file.  The shell features two special commands, `dump` and `clear`.  With the `dump` command, you can display all the code you've entered before and optionally write it to file.  To simply display what code you've previously entered, enter the `dump` command without any arguments:
 
@@ -196,7 +196,7 @@ To write the previously entered code to a file, just pass a filename as the firs
 
 The **QUNT** shell features one more command:  `clear`.  This deletes all the code that was previously entered (every time you enter **QUNT** code into the shell, it is saved;  this makes it easier to grab a list of commands that you might want to use in a program).
 
-## User Input
+# User Input
 
 **QUNT** programs can get user input by using the `.` command.  When used, this will allow the user to type in a number;  this number will be stored in the buffer, where it can be placed in the queue, displayed, etc.  For example, let's write a program that accepts user input;  it will get three numbers from the user, and then display the average of those numbers:
 
@@ -214,9 +214,9 @@ Save the complete program to a file named `average.q`, and run it:
 	The average of these numbers is 2
 	localhost:~ user$ 
 
-## Examples
+# Examples
 
-### Fibonacci Sequence Generator
+## Fibonacci Sequence Generator
 
 Here are some examples of **QUNT** code.  The first example is a *Fibonacci Sequence* generator.  It will display a welcome message, then generate and display the first 10 iterations of the sequence:
 
@@ -242,7 +242,7 @@ If saved to a file named `fibonacci.q` and executed, this produces:
 	34
 	localhost:~ user$
 
-### Celsius to Fahrenheit Converter
+## Celsius to Fahrenheit Converter
 
 Our second example is a program that converts a number into from Celsius to Fahrenheit degrees.  The only flaw in the program is that if you try to convert "0", it will display an error message and exit.
 
@@ -261,7 +261,7 @@ If saved to a file named `celsius.q` and executed, this produces:
 
 `celsius.q` was written by Will Munslow, and submitted via an Internet forum.
 
-### Which Number is Larger Version One
+## Which Number is Larger Version One
 
 Our third example is a clever program that takes two numbers in as input, and determines which one of the numbers is larger, or if the two values are equal.  This is probably the most complicated program in the manual, and was written before the comparison operator `~` was created:
 
@@ -283,7 +283,7 @@ Please note that if especially large numbers are entered, it may take the progra
 
 `greater.q` was written by Léon Planken, and was submitted via an Internet forum.
 
-### Which Number is Larger Version Two
+## Which Number is Larger Version Two
 
 Since the creation of the ~ operator, Mr. Planken has a written a newer, easier to understand version of `greater.q`:
 
@@ -302,7 +302,7 @@ The performs the same thing as the previous version, only done much more simply.
 
 `greater2.q` was written by Léon Planken, and was submitted via an Internet forum.
 
-### Calculate Average
+## Calculate Average
 
 The fifth example takes in any number of numbers, calculates their average, and displays it to the user.
 
@@ -329,7 +329,7 @@ If saved to a file named `average.q` and executed, this produces:
 
 `average.q` was written by Léon Planken, and was submitted via an Internet forum.
 
-## QUNT Commands
+# QUNT Commands
 
 There are 26 different commands/operators in **QUNT**.  All whitespace in a **QUNT** program is ignored.  All command arguments must be numeric.  Arguments are placed directly after the command;  for example, to initiate a loop that will execute 3 times, you would use `{3`.
 
@@ -404,7 +404,7 @@ There are 26 different commands/operators in **QUNT**.  All whitespace in a **QU
 	║         ║                   ║ passed to it is the value added to the queue.                        ║
 	╚═════════╩═══════════════════╩══════════════════════════════════════════════════════════════════════╝
 
-## License
+# License
 
 Copyright (c) 2018, Daniel Hetrick
 All rights reserved.
