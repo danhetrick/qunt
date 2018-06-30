@@ -2,9 +2,21 @@
 
 ## Summary
 
-**QUNT** (pronounced *"kyūnt"*, not...the other way) is an esoteric programming language influenced by Brainfuck.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  For example, here's a Fibonacci sequence generator written in **QUNT**.  It will generate and display the first 10 iterations of the sequence:
+**QUNT** (pronounced *"kyūnt"*, not...the other way) is an esoteric programming language influenced by Brainfuck.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  For example, here's a Fibonacci sequence generator written in **QUNT**.  It will generate and display the first 10 iterations of the sequence:
 
     >0&?>1&?+?:{7<+?:}
+
+**QUNT** programs can be executed with `qunt.pl`, either by using the `run` commandline argument, or by piping code to the script.  For example, if you have a **QUNT** program saved in a file named `myprogram.q`, you can execute the program with
+
+	perl qunt.pl run myprogram.q
+
+or
+
+	cat myprogram.q | perl qunt.pl
+
+**QUNT** code can also be compiled to a stand-alone Perl script (that is, a script that doesn't need `qunt.pl` to execute).  To compile, run `qunt.pl` with the program's filename as the only argument.  All compiled code is printed to STDOUT.  To compile the **QUNT** program `myprogram.q` to Perl:
+
+	perl qunt.pl myprogram.q >> myprogram.pl
 
 `qunt.pl` requires Perl, and will run in any environment that can run Perl.  Tested on Windows 7, Windows 8, Windows 8.1, Windows 10, Debian Linux, and Ubuntu Linux.
 
