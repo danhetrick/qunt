@@ -1,15 +1,12 @@
 ![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
 
 	qunt.pl
-	The QUNT Compiler/Interpreter
 	LICENSE
 		[BSD 2-Clause](#license)
 	README.md
 	docs/
 		qunt.pdf
-			A PDF version of README.md
 		cheatsheet.txt
-			A text file with a list of all 26 **QUNT** commands along with usage text.
 	examples/
 		[examples/average.q](#calculate-average)
 		[examples/celsius.q](#celsius-to-fahrenheit-converter)
