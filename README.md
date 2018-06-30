@@ -9,6 +9,9 @@
 * [The Shell](#the-shell)
 * [User Input](#user-input)
 * [Examples](#examples)
+	* [Fibonacci Sequence Generator](#fibonacci-sequence-generator)
+	* [Celsius to Fahrenheit Converter](#celsius-to-fahrenheit-converter)
+	* [Which Number is Larger Version One](#which-version-is-larger-version-one)
 
 ## Summary
 
@@ -91,7 +94,7 @@ Piping code to `qunt.pl` is possible.  Any code piped to `qunt.pl` is immediatel
 
 ## The Queue
 
-**QUNT** is based around the "queue":  a sequence of numbers, of variable length, that is manipulated and operated upon.  Besides the queue, QUNT features a "buffer";  the results of mathematical operations is stored in the buffer, buffer values can be added to the queue, and queue values can be stored in the buffer.   Initially, the buffer is set to zero.  This is the core concept of **QUNT**.  The only command that does not operate on either the queue or the buffer is the `$` command, which is used to display text (see *Displaying Text*, below).
+**QUNT** is based around the "queue":  a sequence of numbers, of variable length, that is manipulated and operated upon.  Besides the queue, QUNT features a "buffer";  the results of mathematical operations is stored in the buffer, buffer values can be added to the queue, and queue values can be stored in the buffer.   Initially, the buffer is set to zero.  This is the core concept of **QUNT**.  The only command that does not operate on either the queue or the buffer is the `$` command, which is used to display text (see [Displaying Text](#displaying-text), below).
 
 Think of the queue as a list of numbers.  You can print these numbers, or perform mathematical operations on them.  Math works differently in QUNT than in other programming languages.  All math operations are performed on the entire queue, rather than on one or two values at a time.  For example, addition is fairly normal.  Given a queue with the values `[1,2,3]`, if we perform the addition operation (with the `+` command), the result "6" will be stored in the buffer;  that is, "1+2+3 = 6". Things get a little stranger when we use other mathematical operations.  Given a queue with the values `[3,2,3]`, if we were to perform the exponential operation (with the `^` command), the result "729" will be stored in the buffer.  That's because "(32)^3 = 729".  Each operation is performed on every value in the queue, in sequence.
 
@@ -179,3 +182,50 @@ Save the complete program to a file named `average.q`, and run it:
 	localhost:~ user$ 
 
 ## Examples
+
+### Fibonacci Sequence Generator
+
+Here are some examples of **QUNT** code.  The first example is a *Fibonacci Sequence* generator.  It will display a welcome message, then generate and display the first 10 iterations of the sequence:
+
+	$84$104$105$115$32$119$105$108$108$32$103$101$110$101$114$97$116$101$32$116$104$101
+	$32$102$105$114$115$116$32$116$101$110$32$105$116$101$114$97$116$105$111$110$115
+	$32$111$102$32$116$104$101$32$70$105$98$111$110$97$99$99$105$32$83$101$113$117$101
+	$110$99$101$32$97$110$100$32$100$105$115$112$108$97$121$32$116$104$101$109$58$10>0&
+	?>1&?+?:{7<+?:
+
+If saved to a file named `fibonacci.q` and executed, this produces:
+
+	localhost:~ user$ qunt.pl run fibonacci.q
+	This will generate the first ten iterations of the Fibonacci Sequence and display them:
+	0
+	1
+	1
+	2
+	3
+	5
+	8
+	13
+	21
+	34
+	localhost:~ user$
+
+### Celsius to Fahrenheit Converter
+
+Our second example is a program that converts a number into from Celsius to Fahrenheit degrees.  The only flaw in the program is that if you try to convert "0", it will display an error message and exit.
+
+	$69$110$116$101$114$32$84$101$109$112$58$.
+	(0$69$114$114$111$114$33$32$73$110$112$117$116$32$99$97$110$110$111$116$32$98$101
+	$32$101$120$97$99$116$108$121$32$122$101$114$111$10!) $67$101$108$99$105$117$115$58
+	:>32-|:>5*||;/<`% $70$97$104$114$101$110$104$101$105$116$58;>9*@;>5/@;>32+@;%!
+
+If saved to a file named `celsius.q` and executed, this produces:
+
+	localhost:~ user$ qunt.pl run degrees.q
+	Enter Temp:32
+	Celcius:32
+	Fahrenheit:89.6
+	localhost:~ user$
+
+`celsius.q` was written by Will Munslow, and submitted via an Internet forum.
+
+### Which Number is Larger Version One
