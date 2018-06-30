@@ -27,7 +27,7 @@ or
 * [The Queue](#the-queue)
 * [The Buffer and Conditionals](#the-buffer-and-conditionals)
 * [Displaying Text](#displaying-text)
-* [The Shell](#the-shell)
+* [The QUNT Shell](#the-qunt-shell)
 * [User Input](#user-input)
 * [Examples](#examples)
 	* [Fibonacci Sequence Generator](#fibonacci-sequence-generator)
@@ -38,7 +38,7 @@ or
 * [QUNT Commands](#qunt-commands)
 * [License](#license)
 
-## qunt.pl
+# qunt.pl
 
 	QUNT Compiler/Interpreter 0.053
 
@@ -52,7 +52,7 @@ or
 	To convert text into QUNT code, execute with the argument "text", followed by
 	the text to convert.  All compiled/generated code is printed to STDOUT.
 
-## The QUNT Compiler
+# The QUNT Compiler
 
 The official **QUNT Compiler/Interpreter**, `qunt.pl`, is written in Perl, and requires a default installation of Perl to run it and the compiled code produced by it. If called without any arguments, `qunt.pl` enters shell mode, where you can enter **QUNT** commands or statements and have them immediately executed.
 
@@ -169,7 +169,7 @@ For a simple "else" branch, use the `"` command.  For example, let's write a pro
 
 # Displaying Text
 
-Because all command arguments must be numbers, displaying text in **QUNT** can be difficult.  The $ command is used for this;  the command converts its argument from an ASCII code to an ASCII character, and displays it.  To make it easier to display text, the compiler/shell has a special commandline mode.  If `qunt.pl` is passed the argument "text", followed by the text to convert, it will generate **QUNT** code to display the desired text.  For example:
+Because all command arguments must be numbers, displaying text in **QUNT** can be difficult.  The `$` command is used for this;  the command converts its argument from an ASCII code to an ASCII character, and displays it.  To make it easier to display text, the compiler/shell has a special commandline mode.  If `qunt.pl` is passed the argument "text", followed by the text to convert, it will generate **QUNT** code to display the desired text.  For example:
 
 	localhost:~ user$ qunt.pl text Hello, world!
 	$72$101$108$108$111$44$32$119$111$114$108$100$33
@@ -177,7 +177,7 @@ Because all command arguments must be numbers, displaying text in **QUNT** can b
 
 The code generated will display "Hello, world!".
 
-# The Shell
+# The QUNT Shell
 
 For writing and testing **QUNT** code, the shell can be a useful asset.  With the shell, you can write code and execute it immediately, without having to compile it or write it to file.  The shell features two special commands, `dump` and `clear`.  With the `dump` command, you can display all the code you've entered before and optionally write it to file.  To simply display what code you've previously entered, enter the `dump` command without any arguments:
 
