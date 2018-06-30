@@ -3,8 +3,8 @@
 
 * **qunt.pl**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;The QUNT Compiler/Interpreter
 * **LICENSE**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[BSD 2-Clause](#license)
-* **README.md**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;This document
-* **docs/qunt.pdf**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Documentation in PDF format
+* **README.md**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;This document
+* **docs/qunt.pdf**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Documentation in PDF format
 * **docs/cheatsheet.pdf**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Table of all QUNT commands
 * **examples/celsius.q**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Code example
 * **examples/fibonacci.q**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Code example
