@@ -1,6 +1,6 @@
 ![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
 
-## Summary
+# Summary
 
 **QUNT** (pronounced *"kyūnt"*, not...the other way) is an esoteric programming language influenced by Brainfuck.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  For example, here's a Fibonacci sequence generator written in **QUNT**.  It will generate and display the first 10 iterations of the sequence:
 
@@ -20,7 +20,7 @@ or
 
 `qunt.pl` requires Perl, and will run in any environment that can run Perl.  Tested on Windows 7, Windows 8, Windows 8.1, Windows 10, Debian Linux, and Ubuntu Linux.
 
-## Table of Contents
+# Table of Contents
 
 * [qunt.pl](#qunt.pl)
 * [The QUNT Compiler](#the-qunt-compiler)
