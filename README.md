@@ -1,7 +1,5 @@
 ![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
 
-# QUNT - The Queue for Numeric Transformation
-
 ## Summary
 
 **QUNT** (pronounced *"kyūnt"*, not...the other way) is an esoteric programming language influenced by Brainfuck.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  For example, here's a Fibonacci sequence generator written in **QUNT**.  It will generate and display the first 10 iterations of the sequence:
