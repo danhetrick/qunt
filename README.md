@@ -75,7 +75,7 @@ If a valid filename is passed as an argument to `qunt.pl`, the **QUNT** code con
 
 	localhost:~ user$
 
-A **QUNT** program can also be directly interpreted, without having to pipe it to Perl, by using the `run` argument to `qunt.pl`.  Execute `qunt.pl` with the word `run` as the first argument, and the filename of the program you want to interpret as the second.  If you're having trouble remembering all these command-line options, you can execute *qunt.p* with the world `help` as the only argument to display usage information.
+A **QUNT** program can also be directly interpreted, without having to pipe it to Perl, by using the `run` argument to `qunt.pl`.  Execute `qunt.pl` with the word `run` as the first argument, and the filename of the program you want to interpret as the second.  If you're having trouble remembering all these command-line options, you can execute `qunt.pl` with the world `help` as the only argument to display usage information.
 
 Piping code to `qunt.pl` is possible.  Any code piped to `qunt.pl` is immediately interpreted, rather than compiled to source.
 
@@ -93,7 +93,8 @@ The division command, `/`, works like the others.  Given a queue with the values
 
 All command results that do not directly manipulate the queue are stored in the buffer.  Conditional statements, that is, "if...then" statements, compare a given value to the buffer.  For example, let's write a program that does a math operation, and displays text depending on what the output is.  Our program will calculate "2+2", and display a message if the answer is "4", and a different message if it is not:
 
-	>2>2+(4$84$104$101$97$110$115$119$101$114$119$97$115$102$111$117$114$10$"@$84$104$ 101$97$110$115$119$101$114$119$97$115$110$111$116$102$111$117$114$10)
+	>2>2+(4$84$104$101$97$110$115$119$101$114$119$97$115$102$111$117$114$10$"@$84$104
+	$101$97$110$115$119$101$114$119$97$115$110$111$116$102$111$117$114$10)
 
 Save this to a file named `twoandtwo.q`.  If we compile and execute the program, this is what happens:
 
@@ -132,3 +133,21 @@ The code generated will display "Hello, world!".
 
 ## The Shell
 
+For writing and testing **QUNT** code, the shell can be a useful asset.  With the shell, you can write code and execute it immediately, without having to compile it or write it to file.  The shell features two special commands, dump and clear.  With the dump command, you can display all the code you've entered before and optionally write it to file.  To simply display what code you've previously entered, enter the `dump` command without any arguments:
+
+	. >1>1+?
+	2
+	. dump
+	>1>1+?
+
+To write the previously entered code to a file, just pass a filename as the first argument to the `dump` command.  For example, to write the code in the last example to a file named `oneandone.q`, you could do:
+
+	. >1>1+?
+	2
+	. dump oneandone.q
+	Wrote dumped code to oneandone.q 
+	.
+
+The **QUNT** shell features one more command:  `clear`.  This deletes all the code that was previously entered (every time you enter **QUNT** code into the shell, it is saved;  this makes it easier to grab a list of commands that you might want to use in a program).
+
+## User Input
