@@ -1,5 +1,24 @@
 ![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
 
+# Included with QUNT
+
+* qunt.pl
+	* The QUNT Compiler/Interpreter
+* docs/
+	* qunt.pdf
+		* A PDF version of README.md
+	* cheatsheet.txt
+		* A text file with a list of all 26 **QUNT** commands along with usage text.
+* examples/
+	* [examples/average.q](#calculate-average)
+	* [examples/celsius.q](#celsius-to-fahrenheit-converter)
+	* [examples/fibonacci.q](#fibonacci-sequence-generator)
+	* [examples/greater.q](#which-version-is-larger-version-one)
+	* [examples/greater2.q](#which-version-is-larger-version-two)
+* LICENSE
+	* [BSD 2-Clause](#license)
+* README.md
+
 # Summary
 
 **QUNT** (pronounced *"kyūnt"*, not...the other way) is an esoteric programming language influenced by Brainfuck.  It features 26 different commands, uses a "queue" metaphor for data manipulation, and has very terse syntax.  For example, here's a Fibonacci sequence generator written in **QUNT**.  It will generate and display the first 10 iterations of the sequence:
@@ -21,25 +40,6 @@ or
 `qunt.pl` requires Perl, and will run in any environment that can run Perl.  Tested on Windows 7, Windows 8, Windows 8.1, Windows 10, Debian Linux, and Ubuntu Linux.
 
 Compiled **QUNT** programs will run in any environment that can run Perl;  they require nothing except a Perl installation.
-
-# Included with QUNT
-
-* qunt.pl
-	* The QUNT Compiler/Interpreter
-* Documentation
-	* docs/qunt.pdf
-		* A PDF version of README.md
-	* docs/cheatsheet.txt
-		* A text file with a list of all 26 **QUNT** commands along with usage text.
-* QUNT Code Examples
-	* [examples/average.q](#calculate-average)
-	* [examples/celsius.q](#celsius-to-fahrenheit-converter)
-	* [examples/fibonacci.q](#fibonacci-sequence-generator)
-	* [examples/greater.q](#which-version-is-larger-version-one)
-	* [examples/greater2.q](#which-version-is-larger-version-two)
-* License
-	* [BSD 2-Clause](#license)
-* README.md
 
 # Table of Contents
 
