@@ -3,7 +3,7 @@
 
 * **qunt.pl**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;The QUNT Compiler/Interpreter
 * **LICENSE**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[BSD 2-Clause](#license)
-* **README.md**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;This document
+* **README.md**&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;This document
 * **docs/qunt.pdf**			Documentation in PDF format
 * **docs/cheatsheet.pdf**	Table of all QUNT commands
 * **examples/celsius.q**	Code example
