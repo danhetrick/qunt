@@ -12,6 +12,8 @@
 	* [Fibonacci Sequence Generator](#fibonacci-sequence-generator)
 	* [Celsius to Fahrenheit Converter](#celsius-to-fahrenheit-converter)
 	* [Which Number is Larger Version One](#which-version-is-larger-version-one)
+	* [Which Number is Larger Version Two](#which-version-is-larger-version-two)
+	* [Calculate Average](#calculate-average)
 
 ## Summary
 
@@ -229,3 +231,73 @@ If saved to a file named `celsius.q` and executed, this produces:
 `celsius.q` was written by Will Munslow, and submitted via an Internet forum.
 
 ### Which Number is Larger Version One
+
+Our third example is a clever program that takes two numbers in as input, and determines which one of the numbers is larger, or if the two values are equal.  This is probably the most complicated program in the manual, and was written before the comparison operator `~` was created:
+
+	$101$110$116$101$114$32$102$105$114$115$116$32$118$97$108$117$101$46$46$46$46$32.
+	$101$110$116$101$114$32$115$101$99$111$110$100$32$118$97$108$117$101$46$46$46$32
+	:.:(0 $116$104$101$32$110$117$109$98$101$114$115$32$97$114$101$32$101$113$117$97
+	$108$46$ 13$10! ) >0&;-:>0<< { (0 +(0 >0>0>1&|<< " >1>0&| ) ) (1 +(0 >2&|<< " >1&
+	) ) (2 &(0 +$109$97$120$61?! ) `(0 +$109$97$120$61?! ) >3&||<>0 ) (3 `:<& (0 >1&|
+	;&|;>4&| " >3&| ) ) (4 &| (0 >2&| " ;>4&| ) )  }
+
+If saved to a file named `greater.q` and executed, this produces:
+
+	localhost:~ user$ qunt.pl run greater.q
+	enter first value.... 25
+	enter second value... 50
+	max=50 localhost:~ user$ 
+
+Please note that if especially large numbers are entered, it may take the program some time to determine which value is greater.  However, if you let it run long enough, it will produce the right result.
+
+`greater.q` was written by Léon Planken, and was submitted via an Internet forum.
+
+### Which Number is Larger Version Two
+
+Since the creation of the ~ operator, Mr. Planken has a written a newer, easier to understand version of `greater.q`:
+
+	$101$110$116$101$114$32$102$105$114$115$116$32$118$97$108$117$101$46$46$46$46$32.: $101$110$116$101$114$32$115$101$99$111$110$100$32$118$97$108$117$101$46$46$46$32.:
+	(0$116$104$101$32$110$117$109$98$101$114$115$32$97$114$101$32$101$113$117$97$108$4
+	6$13$10!) $109$97$120$61(0~`~&)?
+
+The performs the same thing as the previous version, only done much more simply.  It also works much faster than the previous version, even with very large numbers.  If saved to a file named `greater2.q`and executed, this produces:
+
+	localhost:~ user$ qunt.pl run greater2.q
+	enter first value.... 10
+	enter second value... 9
+	max=10
+	localhost:~ user$
+
+`greater2.q` was written by Léon Planken, and was submitted via an Internet forum.
+
+### Calculate Average
+
+The fifth example takes in any number of numbers, calculates their average, and displays it to the user.
+
+	$101$110$116$101$114$32$110$117$109$98$101$114$115$44$32$111$110$101$32$112$101
+	$114$32$108$105$110$101$44$32$101$110$100$32$119$105$116$104$32$48$13$10
+	>0{.(0'):>1&|;}
+	&(0$110$111$32$110$117$109$98$101$114$115$32$101$110$116$101$114$101$100$13$10)
+	>0&;-:
+	<{`(0')<}
+	-:
+	<{`(0')<}
+	-:<<`<:/ $97$118$101$114$97$103$101$61?
+
+If saved to a file named `average.q` and executed, this produces:
+
+	localhost:~ user$ qunt.pl run average.q
+	enter numbers, one per line, end with 0
+	355
+	123
+	55
+	0
+	average=177.666666666667
+	localhost:~ user$
+
+`average.q` was written by Léon Planken, and was submitted via an Internet forum.
+
+## QUNT Commands
+
+There are 26 different commands/operators in **QUNT**.  All whitespace in a **QUNT** program is ignored.  All command arguments must be numeric.  Arguments are placed directly after the command;  for example, to initiate a loop that will execute 3 times, you would use `{3`.
+
