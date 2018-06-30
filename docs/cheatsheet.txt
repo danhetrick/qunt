@@ -1,0 +1,71 @@
+
+╔═════════╦═══════════════════╦══════════════════════════════════════════════════════════════════════╗
+║ Command ║ Accepts Arguments ║                              Description                             ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    .    ║ No                ║ Gets input from the user and stores it in the buffer.                ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    !    ║ No                ║ Exits the program.                                                   ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    %    ║ No                ║ Prints the contents of the queue; each queue value is followed by    ║
+║         ║                   ║ a newline.                                                           ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    $    ║ Yes               ║ The argument to this command is an ASCII code, which is converted    ║
+║         ║                   ║ to an ASCII character and printed.                                   ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    <    ║ No                ║ Removes the first value from the queue.                              ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    |    ║ No                ║ Removes the last value from the queue.                               ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    &    ║ No                ║ Sets the buffer to the last queue value.                             ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    `    ║ No                ║ Sets the buffer to the first queue value.                            ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    :    ║ No                ║ Adds the buffer value to the end of the queue, and resets the buffer ║
+║         ║                   ║ to zero.                                                             ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    ;    ║ No                ║ Adds the buffer value to the beginning of the queue, and resets the  ║
+║         ║                   ║ buffer to zero.                                                      ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    ?    ║ No                ║ Prints the buffer value, followed by a newline.                      ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    @    ║ No                ║ Clears the queue.                                                    ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    +    ║ No                ║ Adds all values in the queue in sequence.                            ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    *    ║ No                ║ Multiplies all values in the queue in sequence.                      ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    ^    ║ No                ║ Exponentiates all values in the queue in sequence.                   ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    /    ║ No                ║ Divides all values in the queue in sequence.                         ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    -    ║ No                ║ Subtracts all values in the queue in sequence.                       ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    #    ║ No                ║ Performs a modulus operation on all values in the queue in           ║
+║         ║                   ║ sequence.                                                            ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    {    ║ Optional          ║ Begins a loop.  If an argument is passed to the command,             ║
+║         ║                   ║ the loop will be repeated a number of times equal to                 ║
+║         ║                   ║ the argument. If no argument is passed, the loop will                ║
+║         ║                   ║ be infinite.                                                         ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    }    ║ No                ║ Ends a loop.                                                         ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    '    ║ No                ║ Exits a loop.                                                        ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    (    ║ Yes               ║ Begins a conditional code block.  The block will only be             ║
+║         ║                   ║ executed if the buffer is equal to the value passed as               ║
+║         ║                   ║ an argument to the command.                                          ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    )    ║ No                ║ Ends a conditional code block.                                       ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    ~    ║ No                ║ Branches a conditional code block.  The first time it is             ║
+║         ║                   ║ f the buffer is greater than the original condition. The             ║
+║         ║                   ║ second time it is called within a conditional block, the             ║
+║         ║                   ║ code following will be executed if the buffer is less than           ║
+║         ║                   ║ the original condition.                                              ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    "    ║ No                ║ Branches a conditional code block ("else").                          ║
+╠═════════╬═══════════════════╬══════════════════════════════════════════════════════════════════════╣
+║    >    ║ Yes               ║ Adds a value to the end of the queue.  The argument                  ║
+║         ║                   ║ passed to it is the value added to the queue.                        ║
+╚═════════╩═══════════════════╩══════════════════════════════════════════════════════════════════════╝

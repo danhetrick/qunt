@@ -20,6 +20,8 @@ or
 
 `qunt.pl` requires Perl, and will run in any environment that can run Perl.  Tested on Windows 7, Windows 8, Windows 8.1, Windows 10, Debian Linux, and Ubuntu Linux.
 
+Compiled **QUNT** programs will run in any environment that can run Perl;  they require nothing except a Perl installation.
+
 # Table of Contents
 
 * [qunt.pl](#qunt.pl)
@@ -215,6 +217,8 @@ Save the complete program to a file named `average.q`, and run it:
 	localhost:~ user$ 
 
 # Examples
+
+All of the programs featured here can be found in the `examples` directory.
 
 ## Fibonacci Sequence Generator
 
