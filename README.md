@@ -1,9 +1,10 @@
 ![QUNT](https://github.com/danhetrick/qunt/blob/media/qunt_logo.png?raw=true)
 
-# Included with QUNT
-
 * qunt.pl
 	* The QUNT Compiler/Interpreter
+* LICENSE
+	* [BSD 2-Clause](#license)
+* README.md
 * docs/
 	* qunt.pdf
 		* A PDF version of README.md
@@ -15,9 +16,6 @@
 	* [examples/fibonacci.q](#fibonacci-sequence-generator)
 	* [examples/greater.q](#which-version-is-larger-version-one)
 	* [examples/greater2.q](#which-version-is-larger-version-two)
-* LICENSE
-	* [BSD 2-Clause](#license)
-* README.md
 
 # Summary
 
