@@ -16,7 +16,7 @@ or
 
 **QUNT** code can also be compiled to a stand-alone Perl script (that is, a script that doesn't need `qunt.pl` to execute).  To compile, run `qunt.pl` with the program's filename as the only argument.  All compiled code is printed to STDOUT.  To compile the **QUNT** program `myprogram.q` to Perl:
 
-	perl qunt.pl myprogram.q >> myprogram.pl
+	perl qunt.pl myprogram.q > myprogram.pl
 
 `qunt.pl` requires Perl, and will run in any environment that can run Perl.  Tested on Windows 7, Windows 8, Windows 8.1, Windows 10, Debian Linux, and Ubuntu Linux.
 
